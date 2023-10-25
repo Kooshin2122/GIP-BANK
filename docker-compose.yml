@@ -1,0 +1,27 @@
+version: "3"
+
+networks:
+  gibbank-network:
+    driver: bridge
+
+services:
+  GibBank_website:
+    image: maancode/gibbankwebsite:1.0.0
+    container_name: gibbank-website
+    ports:
+      - 3000:3000
+    networks:
+      - gibbank-network
+    restart: unless-stopped
+
+  nginx_webserver:
+    image: nginx:latest
+    container_name: gibbank-web-server
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    networks:
+      - gibbank-network
+    ports:
+      - 80:80
+      - 443:443
+    restart: unless-stopped
