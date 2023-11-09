@@ -84,23 +84,40 @@ export default function InsurancePremiumFinance() {
   return (
     <>
       <NormalHeros
-        img="/personalAcnt.jpg"
+        img="/GIB_Bank_Pics/premium_ins/premium_ins.jpg"
         title="Insurance Premium Finance"
         subtitle="
-        Unlock Financial Flexibility with Galaxy International Bank Insurance Premium Finance
-        At Galaxy International Bank, we understand that managing 
-        your business's finances is a balancing act. One aspect of financial
-        management that can present challenges is paying annual or semi-annual
-        insurance premiums in one lump sum. That's why we offer our corporate 
-        clients a seamless solution: Insurance Premium Finance.
+        Unlock financial flexibility with Galaxy International Bank 
+        insurance premium finance at Galaxy International Bank,
+        we understand that managing your business's finances is a balancing act.
+        One aspect of financial management that can present challenges is paying
+        annual or semi-annual insurance premiums in one lump sum. That's why we
+        offer our corporate clients a seamless solution: Insurance Premium
+        Finance.
         "
       />
-      <Title label="Features & Benefits of" labelC="Insurance Premium Finance" />
-      <SectionList isBg items={features} isImgHidden />
-      <Title label="Requirements" />
-      <SectionList isBg isImgHidden items={requirements} />
-      {/* <Title label="Benefits" /> */}
-      {/* <Benefits items={benefits} /> */}
+      <Title label="Why Choose GIB’s" labelC="Insurance Premium Finance?" />
+      <SectionList
+        isBg isImgHidden
+        textTitle="Cash Flow Management"
+        text="Our premium finance services allow you to spread the cost of your insurance premiums over manageable installments, easing the strain on your working capital and preserving cash flow for other essential business needs."
+      />
+      <SectionList
+        isBg isImgHidden
+        textTitle="No Need for Upfront Payments"
+        text="Say goodbye to the burden of large upfront premium payments. With our premium finance option, you can keep your cash working for you while maintaining the insurance coverage your business requires."
+      />
+      <SectionList
+        isBg isImgHidden
+        textTitle="Customized Solutions"
+        text="We tailor our premium finance packages to fit your specific insurance needs. Whether you require coverage for property or other commercial policies, we've got you covered."
+      />
+      <SectionList
+        isBg isImgHidden
+        textTitle="Transparent"
+        text="The plans are transparent to the company insured and Shariah Compliant."
+      />
+      <div className="h-[10vh]" />
     </>
   );
 }

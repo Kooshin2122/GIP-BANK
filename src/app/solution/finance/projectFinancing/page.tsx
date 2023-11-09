@@ -84,14 +84,22 @@ export default function ProjectFinancing() {
   return (
     <>
       <NormalHeros
-        img="/personalAcnt.jpg"
+        img="/GIB_Bank_Pics/project_fnc/project_fnc2.jpg"
         title="Project Financing"
-        subtitle="At GIB Bank, we recognize that ambitious goals require substantial resources. As your partner, we offer tailored financing solutions and access to the necessary capital, regardless of your project's size or complexity."
+        subtitle="At Galaxy International Bank, we recognize that ambitious goals require substantial resources. As your partner, we offer tailored financing solutions and access to the necessary capital, regardless of your project's size or complexity."
       />
-      <Title label="Features & Benefits of" labelC="Project Financing" />
-      <SectionList isBg items={features} isImgHidden />
-      <Title label="Requirements" />
-      <SectionList isBg isImgHidden items={requirements} />
+      <Title label="How we can" labelC="help you" />
+      <SectionList
+        isBg
+        isImgHidden
+        text="Our Project Financing helps you in the development of infrastructure, energy, and real estate projects in a manner that upholds ethical and transparent financial practices. We encourage responsible investment and foster sustainable economic development while ensuring that investments are made in ventures that comply with Shariah guidelines."
+      />
+      <SectionList
+        isBg
+        isImgHidden
+        text="Our Shariah-compliant project financing solutions include Mudarabah and Diminishing Musharakah. These solutions ensure that financial partnerships are structured in a manner that promotes equitable risk-sharing and ethical investment practices."
+      />
+      <div className="h-[7vh]" />
       {/* <Title label="Benefits" /> */}
       {/* <Benefits items={benefits} /> */}
     </>

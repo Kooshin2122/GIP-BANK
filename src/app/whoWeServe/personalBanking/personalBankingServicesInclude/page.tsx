@@ -84,7 +84,7 @@ export default function PersonalBankingServicesInclude() {
   return (
     <>
       <NormalHeros
-        img="/personalAcnt.jpg"
+        img="/GIB_Bank_Pics/personal_banking/personal_banking.jpg"
         title="Personal Banking Services Include"
         subtitle="
         Unlock Financial Flexibility with Galaxy International Bank Insurance Premium Finance

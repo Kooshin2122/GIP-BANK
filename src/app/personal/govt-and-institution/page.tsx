@@ -96,7 +96,7 @@ export default function GovtAndInstitutionAccountPage() {
     <>
       <NormalHeros
         img="/govt.jpg"
-        title="Banking For Gov`t And Institution"
+        title="Banking For Gov’t And Institution"
         subtitle="This account offers comprehensive financial solutions for government institutions and 
         public sector companies."
       />

@@ -9,6 +9,7 @@ import Image from "next/image";
 import { TextButton } from "../button";
 
 export function NavBarHz() {
+  const pathname = usePathname();
   return (
     <nav className="max-md:flex-1 md:w-full flex items-center justify-between px-14">
       <ul className="flex gap-14 items-center  max-md:gap-8">
@@ -92,15 +93,15 @@ export function NavBarHz() {
           links={
             [
               {
-                title: "Personal Banking",
+                title: "",
                 subLinks: [
                   {
-                    href: "/whoWeServe/personalBanking/personalBankingServicesInclude",
-                    label: "Personal banking services include",
+                    href: "/homeBageLinks/bankingForMe",
+                    label: "Personal banking",
                   },
                   {
-                    href: "/whoWeServe/personalBanking/corporateBankingServicesInclude",
-                    label: "Corporate banking services include",
+                    href: "/homeBageLinks/bankingForMyBusiness",
+                    label: "Corporate banking",
                   },
                   {
                     href: "/whoWeServe/personalBanking/microfinance",
@@ -111,6 +112,14 @@ export function NavBarHz() {
             ]
           }
         />
+        <Link
+          href={"/about-us"}
+          className={
+            `${pathname == "/about-us" ? "text-primary font-semibold" : "text-secondary font-normal"} text-md max-sm:text-base flex items-center gap-2 max-sm:justify-between`
+          }
+        >
+          About us
+      </Link>
       </ul>
       <ul className=" flex-1 flex gap-4 justify-end px-3">
         <TextButton className="py-[5px] text-[14px] rounded-md">
@@ -128,8 +137,8 @@ export const NavBarVertical = () => {
   //
   return (
     <div className="fixed  w-full h-full max-md:flex justify-end  z-50 hidden max-1-md:visible">
-      <div onClick={onCloseOrOpen} className="bg-black/50 flex-1" />
-      <nav className="animate-navbar z-50 bg-white h-full w-3/5 border-l-4 border-primary flex  flex-col">
+      <div onClick={onCloseOrOpen} className="bg-black/50  flex-1" />
+      <nav className="animate-navbar z-50  bg-white overflow-scroll	 h-full w-3/5 border-l-4 border-primary flex  flex-col">
         <div className="border-b px-5 py-2 ">
           <img
             src="/gibbank-logo.png"
@@ -145,21 +154,36 @@ export const NavBarVertical = () => {
                   title: "Financing",
                   subLinks: [
                     {
-                      href: "/personal/personal-current-account",
-                      label: "Personal Current Account",
+                      href: "/solution/finance/workingCapitalFinance",
+                      label: "Working Capital Finance",
                     },
                     {
-                      href: "/personal/saving-account",
-                      label: "Saving Account",
-                    },
-                    { href: "/personal/govt-and-institution", label: "Gov`t And Institution" },
-                    {
-                      href: "/personal/ngos-page",
-                      label: "Banking For NGO`s",
+                      href: "/solution/finance/assetBasedFinancing",
+                      label: "Asset Based Financing",
                     },
                     {
-                      href: "/personal/education-and-institutions",
-                      label: "Banking For Educational Institutions",
+                      href: "/solution/finance/projectFinancing",
+                      label: "Project Financing"
+                    },
+                    {
+                      href: "/solution/finance/realEstateFinance",
+                      label: "Real Estate Finance",
+                    },
+                    {
+                      href: "/solution/finance/carFinance",
+                      label: "Car Finance",
+                    },
+                    {
+                      href: "/solution/finance/financingFurniture",
+                      label: "Financing furniture and home appliance",
+                    },
+                    {
+                      href: "/solution/finance/homeFinance",
+                      label: "Home Finance",
+                    },
+                    {
+                      href: "/solution/finance/letterOfGuarantee",
+                      label: "Letter of Guarantee",
                     },
                   ]
                 },
@@ -167,21 +191,16 @@ export const NavBarVertical = () => {
                   title: "Payments",
                   subLinks: [
                     {
-                      href: "/personal/personal-current-account",
-                      label: "Personal Current Account",
+                      href: "/solution/payment/swift",
+                      label: "SWIFT",
                     },
                     {
-                      href: "/personal/saving-account",
-                      label: "Saving Account",
-                    },
-                    { href: "/personal/govt-and-institution", label: "Gov`t And Institution" },
-                    {
-                      href: "/personal/ngos-page",
-                      label: "Banking For NGO`s",
+                      href: "/solution/payment/mobileOnlineBanking",
+                      label: "Mobile and Online Banking",
                     },
                     {
-                      href: "/personal/education-and-institutions",
-                      label: "Banking For Educational Institutions",
+                      href: "/solution/payment/rtgsForLocalPayments",
+                      label: "RTGS for Local Payments",
                     },
                   ]
                 },
@@ -189,12 +208,12 @@ export const NavBarVertical = () => {
                   title: "Insurance",
                   subLinks: [
                     {
-                      href: "/personal/personal-current-account",
-                      label: "Personal Current Account",
+                      href: "/solution/insurance/insuranceForMyBusiness",
+                      label: "Insurance For My Business",
                     },
                     {
-                      href: "/personal/saving-account",
-                      label: "Saving Account",
+                      href: "/solution/insurance/insurancePremiumFinance",
+                      label: "Insurance Premium Finance",
                     },
                   ]
                 }
@@ -209,22 +228,17 @@ export const NavBarVertical = () => {
                   title: "Personal Banking",
                   subLinks: [
                     {
-                      href: "/personal/personal-current-account",
-                      label: "Personal Current Account",
+                      href: "/whoWeServe/personalBanking/personalBankingServicesInclude",
+                      label: "Personal banking services include",
                     },
                     {
-                      href: "/personal/saving-account",
-                      label: "Saving Account",
-                    },
-                    { href: "/personal/govt-and-institution", label: "Gov`t And Institution" },
-                    {
-                      href: "/personal/ngos-page",
-                      label: "Banking For NGO`s",
+                      href: "/whoWeServe/personalBanking/corporateBankingServicesInclude",
+                      label: "Corporate banking services include",
                     },
                     {
-                      href: "/personal/education-and-institutions",
-                      label: "Banking For Educational Institutions",
-                    },
+                      href: "/whoWeServe/personalBanking/microfinance",
+                      label: "Microfinance",
+                    }
                   ]
                 },
               ]
@@ -358,7 +372,7 @@ const MobileNavLink = ({
   };
   return (
     <li
-      className="max-sm:px-4  max-sm:py-2 "
+      className="max-sm:px-4 max-sm:py-2 "
     >
       <Link
         onClick={onToggle}
@@ -386,23 +400,23 @@ const MobileNavLink = ({
                 onClick={onSubToggle}
                 href={href ?? "#"}
                 className={
-                  "text-sm font-semibold p-2  text-orange-500 flex items-center gap-2 max-sm:justify-between " +
+                  "text-sm font-semibold p-2 border-b text-orange-500 flex items-center max-sm:justify-between " +
                   className
                 }
               >
-                {link.title} {subToggleDropDown ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}
+                {link.title}
               </Link>
 
-              {isSubLinks && subToggleDropDown && (
+              {isSubLinks && (
                 <ul
                   className={
-                    "max-sm:relative max-sm:divide-y-[0.3px] max-sm:shadow-none absolute  bg-white shadow-sm py-1 flex flex-col gap-1 rounded-md animate-wiggle"
+                    "max-sm:relative max-sm:divide-y-[0.3px] max-sm:shadow-none absolute bg-primarytp shadow-sm flex flex-col animate-wiggle"
                   }
                 >
                   {link.subLinks.map((subLink) => (
                     <li
                       key={subLink.label.replace(" ", "")}
-                      className="px-1 text-secondary py-1 text-xs"
+                      className="px-3 text-orange-600 py-2 bg-primarytp text-xs"
                     >
                       <Link
                         href={subLink.href}

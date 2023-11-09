@@ -8,99 +8,48 @@ import { PiArrowsInCardinalBold } from "react-icons/pi";
 import { AiFillFileText, AiOutlineTransaction } from "react-icons/ai";
 import { MdOutlineSendToMobile } from "react-icons/md";
 
-const requirements = [
+
+
+const solutions = [
   {
-    title: "ID/passport",
-    checkIcon: true,
+    title: "Microlending",
   },
   {
-    title: "Passport photo (taken at the branch)",
-    checkIcon: true,
+    title: "Mobile banking",
+  },
+  {
+    title: "Business advisory",
+  },
+  {
+    title: "Skills training",
+  },
+  {
+    title: "Savings Accounts",
+  },
+  {
+    title: "Mobile payment solutions",
   },
 ];
 
-const features = [
-  {
-    title: "Mobile banking for all your banking needs.",
-  },
-  {
-    title: "Easy way to deposit and withdraw.",
-  },
-  {
-    title: "Standing orders for regular payments.",
-  },
-  {
-    title: "No monthly fee charged.",
-  },
-  {
-    title: "Notifications for all transactions",
-  },
-];
 
-const benefits = [
-  {
-    Icon: BsQrCode,
-    isPrimaryBg: true,
-    title: "SomQR Code",
-  },
-  {
-    Icon: BsCreditCard,
-    isPrimaryBg: false,
-    title: "Access To Debit Card",
-  },
-  {
-    Icon: PiArrowsInCardinalBold,
-    isPrimaryBg: true,
-    title: "Access To Financing",
-  },
-  {
-    Icon: BiTransfer,
-    isPrimaryBg: false,
-    title: "Free Account Transfers To GIB Accounts",
-  },
-  {
-    Icon: BsBank2,
-    isPrimaryBg: false,
-    title: "RTGS Transfers",
-  },
-  {
-    Icon: AiOutlineTransaction,
-    isPrimaryBg: true,
-    title: "SWIFT International Transfers",
-  },
-  {
-    Icon: AiFillFileText,
-    isPrimaryBg: false,
-    title: "Free Ordinary Statement",
-  },
-  {
-    Icon: MdOutlineSendToMobile,
-    isPrimaryBg: true,
-    title: "Access To Mobile and Internet Banking",
-  },
-];
 
 export default function Microfinance() {
   return (
     <>
       <NormalHeros
-        img="/personalAcnt.jpg"
+        img="/GIB_Bank_Pics/micro_fnc/micro_fnc3.jpg"
         title="Microfinance"
         subtitle="
-        Unlock Financial Flexibility with Galaxy International Bank Insurance Premium Finance
-        At Galaxy International Bank, we understand that managing 
-        your business's finances is a balancing act. One aspect of financial
-        management that can present challenges is paying annual or semi-annual
-        insurance premiums in one lump sum. That's why we offer our corporate 
-        clients a seamless solution: Insurance Premium Finance.
+        We believe that every small step can lead to significant achievements.
+        That's why we take pride in introducing our Microfinance banking 
+        solution a robust financial tool designed to empower individuals 
+        and small businesses. With GIB by your side, you can embark on the 
+        journey to start or expand your enterprises, enhance your living 
+        standards, and forge a brighter future for yourself and your families.
         "
       />
-      <Title label="Features & Benefits of" labelC="Microfinance" />
-      <SectionList isBg items={features} isImgHidden />
-      <Title label="Requirements" />
-      <SectionList isBg isImgHidden items={requirements} />
-      {/* <Title label="Benefits" /> */}
-      {/* <Benefits items={benefits} /> */}
+      <Title label="Our specialized solutions" labelC="for microfinance customers include" />
+      <SectionList isBg items={solutions} isImgHidden />
     </>
   );
 }

@@ -4,7 +4,6 @@ export default function NormalHeros({
   img,
   subtitle,
   title,
-  showList = true
 }: {
   img?: string;
   title?: string;
@@ -14,7 +13,7 @@ export default function NormalHeros({
     <div className="relative w-full min-h-[550px] max-1-sm:h-[300px]">
       <Image
         priority
-        src={img ?? "/main-banner.png"}
+        src={img ?? "/business-bank.png"}
         alt="Picture of the author"
         className="h-[364]"
         fill
@@ -24,23 +23,9 @@ export default function NormalHeros({
           <h1 className="text-white font-bold text-5xl  leading-normal max-1-md:text-5xl max-1-md:leading-relaxed max-1-sm:text-3xl max-1-sm:leading-relaxed ">
             {title}
           </h1>
-          <p className="text-gray-300  my-5 text-2xl max-1-sm:text-lg sm:w-[70%]">
+          <p className="text-white my-5 text-2xl max-1-sm:text-lg sm:w-[70%]">
             {subtitle}
           </p>
-          {
-            showList &&
-            <div>
-              <p>
-                1)  Living Room and Bedroom Furniture
-            </p>
-              <p>
-                2)  Kitchen Appliances
-            </p>
-              <p>
-                3)  Home Electronics
-            </p>
-            </div>
-          }
         </div>
       </div>
     </div>

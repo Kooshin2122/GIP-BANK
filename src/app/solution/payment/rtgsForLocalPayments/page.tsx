@@ -8,100 +8,58 @@ import { PiArrowsInCardinalBold } from "react-icons/pi";
 import { AiFillFileText, AiOutlineTransaction } from "react-icons/ai";
 import { MdOutlineSendToMobile } from "react-icons/md";
 
-const requirements = [
+const usage = [
   {
-    title: "ID/passport",
-    checkIcon: true,
+    title: "Bulk payments",
   },
   {
-    title: "Passport photo (taken at the branch)",
-    checkIcon: true,
-  },
-];
-
-const features = [
-  {
-    title: "Mobile banking for all your banking needs.",
+    title: "Tax obligations",
   },
   {
-    title: "Easy way to deposit and withdraw.",
+    title: "Salary payments",
   },
   {
-    title: "Standing orders for regular payments.",
-  },
-  {
-    title: "No monthly fee charged.",
-  },
-  {
-    title: "Notifications for all transactions",
-  },
+    title: "Settling supplier invoices",
+  }
 ];
 
 const benefits = [
   {
-    Icon: BsQrCode,
-    isPrimaryBg: true,
-    title: "SomQR Code",
+    title: "Transfers are quick",
   },
   {
-    Icon: BsCreditCard,
-    isPrimaryBg: false,
-    title: "Access To Debit Card",
+    title: "Send money to any local bank",
   },
   {
-    Icon: PiArrowsInCardinalBold,
-    isPrimaryBg: true,
-    title: "Access To Financing",
+    title: "It is a safe and secure system for funds transfer",
   },
   {
-    Icon: BiTransfer,
-    isPrimaryBg: false,
-    title: "Free Account Transfers To GIB Accounts",
+    title: "RTGS transactions / transfers have no amount cap set by CBS",
   },
   {
-    Icon: BsBank2,
-    isPrimaryBg: false,
-    title: "RTGS Transfers",
-  },
-  {
-    Icon: AiOutlineTransaction,
-    isPrimaryBg: true,
-    title: "SWIFT International Transfers",
-  },
-  {
-    Icon: AiFillFileText,
-    isPrimaryBg: false,
-    title: "Free Ordinary Statement",
-  },
-  {
-    Icon: MdOutlineSendToMobile,
-    isPrimaryBg: true,
-    title: "Access To Mobile and Internet Banking",
-  },
+    title: "Initiate the remittances from anywhere using our internet banking",
+  }
 ];
+
 
 export default function RtgsForLocalPayments() {
   return (
     <>
       <NormalHeros
-        img="/personalAcnt.jpg"
-        title="RTGS For Local Payments"
+        img="/GIB_Bank_Pics/rtgs/rtgs.jpg"
+        title="RTGS (Real-Time Gross Settlement)"
         subtitle="
-        Streamline your local financial transactions with the efficiency
-        and precision of RTGS through GIB. Whether it's paying salaries,
-        settling supplier invoices, handling bulk payments, or meeting
-        tax obligations, our RTGS system ensures real-time, secure,
-        and large-value transactions within Somalia. Say goodbye to delays,
-        risks of carrying cash and embrace the speed and accuracy of 
-        GIB's RTGS.
+        Streamline your local financial transactions with the 
+        efficiency and precision of RTGS through GIB. Say goodbye
+        to delays, risks of carrying cash and embrace the speed and accuracy
+        of GIB's RTGS.
         "
       />
-      <Title label="Features & Benefits of" labelC="RTGS For Local Payments" />
-      <SectionList isBg items={features} isImgHidden />
-      <Title label="Requirements" />
-      <SectionList isBg isImgHidden items={requirements} />
-      {/* <Title label="Benefits" /> */}
-      {/* <Benefits items={benefits} /> */}
+      <Title label="Benefits of using" labelC="RTGS" />
+      <SectionList isBg items={benefits} isImgHidden />
+      <Title label="Use our RTGS for" />
+      <SectionList isBg items={usage} isImgHidden />
+
     </>
   );
 }

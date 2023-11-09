@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function PageHeader() {
   return (
     <NavBarContextProvider>
-      <header className="flex border-b bg-white sticky  top-0 z-20">
+      <header className="flex border-b bg-white sticky  top-0 z-[50]">
         <div className=" px-5 py-2  relative">
           <Link href={'/'}>
             <img

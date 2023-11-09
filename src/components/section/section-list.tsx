@@ -17,6 +17,8 @@ interface ListItemProps {
   isBg?: boolean;
   isImgHidden?: boolean;
   text?: string;
+  textTitle?: string;
+  paddingY?: boolean;
 }
 
 export default function SectionList({
@@ -26,11 +28,13 @@ export default function SectionList({
   isBg = false,
   isImgHidden = false,
   text,
+  textTitle,
+  paddingY = true
 }: ListItemProps) {
   return (
     <div
       className={
-        " w-full mt-4 py-7 max-1-sm:px-3 " + (isBg ? "bg-primarytp" : "")
+        " w-full mt-4 max-1-sm:px-3 " + (isBg ? "bg-primarytp" : "") + (paddingY ? "py-7" : "")
       }
     >
       <div
@@ -39,12 +43,14 @@ export default function SectionList({
           (isReverse ? "flex-row-reverse" : "")
         }
       >
-        {!!text ? (
-          <div className="flex-1 flex gap-4 ">
-            <div>
-              <MdKeyboardDoubleArrowRight className="text-primary text-2xl" />
-            </div>
-            <p className="text-grey text-xl font-light">{text}</p>
+        {!!text || !!textTitle ? (
+          <div className="flex-1 flex flex-col gap-2 ">
+            <h1 className="text-grey-800 w-[70%] text-xl font-medium">
+              {textTitle}
+            </h1>
+            <p className="text-grey w-[90%] sm:w-[90%] text-xl font-light">
+              {text}
+            </p>
           </div>
         ) : (
           <ul>
@@ -103,7 +109,7 @@ function ListItem({
         ) : (
           <MdKeyboardDoubleArrowRight className="text-primary text-2xl" />
         )}
-        <p className="text-grey w-[80%] text-xl font-light">{label}</p>
+        <p className="text-grey w-[95%] text-xl font-light">{label}</p>
       </div>
 
       <ul className="ml-7">

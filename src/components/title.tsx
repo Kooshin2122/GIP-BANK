@@ -14,7 +14,7 @@ export default function Title({
   return (
     <div
       className={
-        "container mx-auto mt-14 flex gap-5 max-1-md:px-4 " + className
+        "container mx-auto mt-10 flex gap-5 max-1-md:px-4 " + className
       }
     >
       {hideSide || <div className="h-14 w-3 max-1-md:h-10 bg-primary" />}

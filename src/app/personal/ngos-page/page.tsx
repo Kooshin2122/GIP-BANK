@@ -8,38 +8,38 @@ import { AiFillFileText, AiOutlineTransaction } from "react-icons/ai";
 
 const requirements = [
   {
-    title: "1. Rules, By-laws, or constitution of the NGO.",
+    title: "Rules, By-laws, or constitution of the NGO.",
     checkIcon: true,
   },
   {
-    title: "2. Copy of a valid NGO registration certificate",
+    title: "Copy of a valid NGO registration certificate",
     checkIcon: true,
   },
   {
-    title: "3. Resolution from the institution on its letter head authorizing the opening of the account, stating signatories, currency type and signing instructions.",
+    title: "Resolution from the institution on its letter head authorizing the opening of the account, stating signatories, currency type and signing instructions.",
     checkIcon: true,
   },
   {
-    title: "4. Identification documents of the account signatories.",
+    title: "Identification documents of the account signatories.",
     checkIcon: true,
   },
   {
-    title: "5. Two passport photographs of each signatory.",
+    title: "Two passport photographs of each signatory.",
     checkIcon: true,
   },
   {
-    title: "6. Completed account opening form.",
+    title: "Completed account opening form.",
     checkIcon: true,
   },
   {
-    title: "7. Proof of address of the institution ;(lease or rent agreement can be used).",
+    title: "Proof of address of the institution ;(lease or rent agreement can be used).",
     checkIcon: true,
   },
 ];
 
 const features = [
   {
-    title: "One free cheque book supplied annually.",
+    title: "One free chequebook supplied annually.",
   },
   {
     title: "Incoming SWIFT funds from international sources.",

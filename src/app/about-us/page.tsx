@@ -7,7 +7,7 @@ export default function AboutUsPage() {
   return (
     <>
       <NormalHeros
-        img="/personal-hero-account.png"
+        img="/aboutUsBg.jpg"
         title="About Us"
         subtitle="Galaxy International Bank (GIB)"
       />
@@ -15,19 +15,21 @@ export default function AboutUsPage() {
       <div className="mt-10" />
       <SectionList
         isBg
-        text="Galaxy International Bank (GIB) is a premier fully-fledged Islamic bank that is licensed and regulated by the Central bank of Somalia to offer banking and financial services under sharia’h principles. GIB offers a full range of financial services focused on sustainable development and wealth creation to inspire economic growth of Somali population."
+        isReverse={true}
         img="/about-1.png"
+        text="Galaxy International Bank (GIB) is a premier fully-fledged Islamic bank that is licensed and regulated by the Central bank of Somalia to offer banking and financial services under sharia’h principles. GIB offers a full range of financial services focused on sustainable development and wealth creation to inspire economic growth of Somali population."
       />
       <Title label="Our governing" labelC="board" />
       <div className="mt-10" />
 
       <SectionList
-        text="The organizational structure of GIB takes cognizance of principles whose main aim will be to facilitate efficiency and effectiveness in service delivery by having a clear span of control and the need for unity of command to enhance speedy decision-making while retaining accountability at every stage. The Company has designed a structure that is flexible enough to enable it realize its objectives."
+        isBg
+        isReverse={true}
         img="/about-2.png"
-        isReverse
+        text="The organizational structure of GIB takes cognizance of principles whose main aim will be to facilitate efficiency and effectiveness in service delivery by having a clear span of control and the need for unity of command to enhance speedy decision-making while retaining accountability at every stage. The Company has designed a structure that is flexible enough to enable it realize its objectives."
       />
 
-      <div className="container  mx-auto mt-36 flex justify-around flex-wrap">
+      <div className="container mx-auto mt-24 flex justify-around flex-wrap">
         <div className="flex flex-col items-center">
           <div className="relative w-[180px] h-[190px] ">
             <Image
@@ -77,6 +79,30 @@ export default function AboutUsPage() {
             </p>
           </div>
         </div>
+        <div className="flex flex-col items-center">
+          <div className="relative w-[180px] h-[190px] ">
+            <Image
+              priority
+              src={"/mission.svg"}
+              alt="Picture of the author"
+              fill
+              className="rounded-lg"
+            />
+          </div>
+          <Title
+            label="Our"
+            labelC="Purpose"
+            hideSide
+            textCenter
+            className="justify-center"
+          />
+          <div className="w-96 my-4  max-1-sm:w-full  max-1-sm:px-4">
+            <p className="text-grey text-xl font-light text-center">
+              <span className="text-grey text-lg font-bold text-center" > Financial Empowerment.</span>
+              We aim to drive social and economic transformation through innovative, customer-centric financial solutions for industries, individuals and communities.
+            </p>
+          </div>
+        </div>
       </div>
       <Title label="Our core" labelC="values" />
       <div className="relative w-full   container  mx-auto mt-20 ">
@@ -86,8 +112,7 @@ export default function AboutUsPage() {
           className="rounded-lg"
         />
       </div>
-
-      <Title label="Our" labelC="Stakeholders" />
+      <div className="h-[15vh]" />
     </>
   );
 }

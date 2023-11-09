@@ -21,19 +21,31 @@ const requirements = [
 
 const features = [
   {
-    title: "Mobile banking for all your banking needs.",
+    title: "Manage your accounts.",
   },
   {
-    title: "Easy way to deposit and withdraw.",
+    title: "Check balances.",
   },
   {
-    title: "Standing orders for regular payments.",
+    title: "Deposit money.",
   },
   {
-    title: "No monthly fee charged.",
+    title: "Withdraw Cash.",
   },
   {
-    title: "Notifications for all transactions",
+    title: "Schedule payments.",
+  },
+  {
+    title: "Order cheque books.",
+  },
+  {
+    title: "Send Money.",
+  },
+  {
+    title: "Review transaction history.",
+  },
+  {
+    title: "Make payments such as bill payments, salaries and supplier payment.",
   },
 ];
 
@@ -84,22 +96,28 @@ export default function MobileOnlineBanking() {
   return (
     <>
       <NormalHeros
-        img="/personalAcnt.jpg"
-        title="Mobile Online Banking"
+        img="/GIB_Bank_Pics/mobile_online/mobile_online1.jpg"
+        title="Mobile And Online Banking"
         subtitle="
-        Experience banking convenience at your fingertips with
-        GIB's Mobile and Online Banking services. Manage your accounts, 
-        check balances, deposit money, review transaction history,
-        and make payments — all from the comfort of your home, 
-        office or on the go. Our user-friendly platforms provide
-        you with 24/7 access to your finances, so you can bank 
-        whenever and wherever you need to.
+        Experience banking convenience at your fingertips with GIB's 
+        Mobile and Online Banking services. These services allows you to
+        do various transactions and fulfil your banking needs using
+        different devices such as mobile phone, tablet or a laptop.
+        It gives you the convenience of banking whenever and wherever you are.
+        Besides being secure and private, it is extremely convenient and easy
+        to use. 
         "
       />
-      <Title label="Features & Benefits of" labelC="Mobile Online Banking" />
+      <Title label="Features of" labelC="Mobile And Online Banking" />
       <SectionList isBg items={features} isImgHidden />
-      <Title label="Requirements" />
-      <SectionList isBg isImgHidden items={requirements} />
+      <SectionList
+        isBg isImgHidden
+        text="Our user-friendly platforms provide you with 24/7 access to your finances."
+      />
+      <SectionList
+        isBg isImgHidden
+        text="Visit our branches or register online."
+      />
       {/* <Title label="Benefits" /> */}
       {/* <Benefits items={benefits} /> */}
     </>

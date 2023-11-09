@@ -8,75 +8,36 @@ import { PiArrowsInCardinalBold } from "react-icons/pi";
 import { AiFillFileText, AiOutlineTransaction } from "react-icons/ai";
 import { MdOutlineSendToMobile } from "react-icons/md";
 
-const requirements = [
+const benefits = [
   {
-    title: "ID/passport",
-    checkIcon: true,
+    title: "Shariah compliant deal.",
   },
   {
-    title: "Passport photo (taken at the branch)",
-    checkIcon: true,
+    title: "Fulfilling your dream of owning a house.",
+  },
+  {
+    title: "Dedicated Relationship Manager.",
+  },
+  {
+    title: "Reasonable Pricing.",
   },
 ];
 
 const features = [
   {
-    title: "Mobile banking for all your banking needs.",
+    title: "It is Based on Diminishing Musharakah.",
   },
   {
-    title: "Easy way to deposit and withdraw.",
+    title: "The same House will be Taken as Security or Part of Security.",
   },
   {
-    title: "Standing orders for regular payments.",
+    title: "Flexible Tenure.",
   },
   {
-    title: "No monthly fee charged.",
+    title: "Client’s Contribution, Minimum 20%.",
   },
   {
-    title: "Notifications for all transactions",
-  },
-];
-
-const benefits = [
-  {
-    Icon: BsQrCode,
-    isPrimaryBg: true,
-    title: "SomQR Code",
-  },
-  {
-    Icon: BsCreditCard,
-    isPrimaryBg: false,
-    title: "Access To Debit Card",
-  },
-  {
-    Icon: PiArrowsInCardinalBold,
-    isPrimaryBg: true,
-    title: "Access To Financing",
-  },
-  {
-    Icon: BiTransfer,
-    isPrimaryBg: false,
-    title: "Free Account Transfers To GIB Accounts",
-  },
-  {
-    Icon: BsBank2,
-    isPrimaryBg: false,
-    title: "RTGS Transfers",
-  },
-  {
-    Icon: AiOutlineTransaction,
-    isPrimaryBg: true,
-    title: "SWIFT International Transfers",
-  },
-  {
-    Icon: AiFillFileText,
-    isPrimaryBg: false,
-    title: "Free Ordinary Statement",
-  },
-  {
-    Icon: MdOutlineSendToMobile,
-    isPrimaryBg: true,
-    title: "Access To Mobile and Internet Banking",
+    title: "Property Insurance.",
   },
 ];
 
@@ -84,7 +45,7 @@ export default function HomeFinance() {
   return (
     <>
       <NormalHeros
-        img="/personalAcnt.jpg"
+        img="/GIB_Bank_Pics/home_fnc/home_finance2.jpg"
         title="Home Finance"
         subtitle="
         Galaxy International Bank’s Home Finance program enables you 
@@ -94,10 +55,19 @@ export default function HomeFinance() {
         for a stable and secure future for you and your family.
         "
       />
-      <Title label="Features & Benefits of" labelC="Home Finance" />
+      <Title label="Home" labelC="Finance" />
+      <SectionList
+        isBg isImgHidden
+        text="
+        Our home financing product is structured under the Sharia compliant
+        mode of Islamic Banking, Diminishing Musharakah. Through this structure
+        the customer owns the house gradually until he/she eventually becomes
+        the sole owner of such house."
+      />
+      <Title label="Features" />
       <SectionList isBg items={features} isImgHidden />
-      <Title label="Requirements" />
-      <SectionList isBg isImgHidden items={requirements} />
+      <Title label="Benefits" />
+      <SectionList isBg isImgHidden items={benefits} />
       {/* <Title label="Benefits" /> */}
       {/* <Benefits items={benefits} /> */}
     </>

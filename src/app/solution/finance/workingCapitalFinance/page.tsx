@@ -84,16 +84,48 @@ export default function WorkingCapitalFinance() {
   return (
     <>
       <NormalHeros
-        img="/working.jpg"
+        img="/GIB_Bank_Pics/working_capt_fnc/working_cptl_fnc3.jpg"
         title="Working Capital Finance"
-        subtitle="GIB offers Working Capital Finance to meet your day-to-day financial obligations and fund business growth."
+        subtitle="GIB offers Working Capital Finance to meet
+        your day-to-day financial obligations and fund business growth.
+        Cash flow challenges are common for successful businesses.
+        At Galaxy International Bank, we offer Shari’ah-compliant financing
+        solutions for your short-term and long-term working capital needs,
+        supporting your business growth while upholding Islamic principles.
+        "
       />
-      <Title label="Features & Benefits of" labelC="personal current account" />
-      <SectionList isBg items={features} isImgHidden />
-      <Title label="Requirements" />
-      <SectionList isBg isImgHidden items={requirements} />
-      {/* <Title label="Benefits" /> */}
-      {/* <Benefits items={benefits} /> */}
+      <Title label="Benefits" labelC="for your business" />
+      <SectionList
+        isBg
+        isImgHidden
+        textTitle="Increased liquidity"
+        text="With our working capital finance you can improve your cash flow and avoid liquidity problems."
+      />
+      <SectionList
+        isBg
+        isImgHidden
+        textTitle="Business growth"
+        text="Use GIB’s working capital finance to invest in inventory, hire new employees, and expand into new markets."
+      />
+      <SectionList
+        isBg
+        isImgHidden
+        textTitle="Improved financial performance"
+        text="Working capital finance can help businesses improve their financial ratios and profitability."
+      />
+      <SectionList
+        isBg
+        isImgHidden
+        textTitle="Flexible repayment periods"
+        text=""
+      />
+      <SectionList
+        isBg
+        isImgHidden
+        textTitle="Competitive Profit rates"
+        text=""
+      />
+      <div className="h-[15vh]" />
     </>
   );
 }

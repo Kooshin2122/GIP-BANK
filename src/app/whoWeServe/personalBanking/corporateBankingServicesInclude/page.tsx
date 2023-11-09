@@ -8,32 +8,44 @@ import { PiArrowsInCardinalBold } from "react-icons/pi";
 import { AiFillFileText, AiOutlineTransaction } from "react-icons/ai";
 import { MdOutlineSendToMobile } from "react-icons/md";
 
-const requirements = [
-  {
-    title: "ID/passport",
-    checkIcon: true,
-  },
-  {
-    title: "Passport photo (taken at the branch)",
-    checkIcon: true,
-  },
-];
-
 const features = [
   {
-    title: "Mobile banking for all your banking needs.",
+    title: "Access to corporate internet banking.",
   },
   {
-    title: "Easy way to deposit and withdraw.",
+    title: "Access to a dedicated Business Banker.",
   },
   {
-    title: "Standing orders for regular payments.",
+    title: "Customized cheque book.",
   },
   {
-    title: "No monthly fee charged.",
+    title: "Reliable international payment solutions.",
   },
   {
-    title: "Notifications for all transactions",
+    title: "RTGS and other local bulk payment solutions.",
+  },
+  {
+    title: "Business advisory services.",
+  },
+  {
+    title: "Access to Insurance services.",
+  },
+];
+const requirements = [
+  {
+    title: "Application form duly completed",
+  },
+  {
+    title: "Board of Directors resolution to open accounts",
+  },
+  {
+    title: "Certificate of incorporation/Registration.",
+  },
+  {
+    title: "ID/passport copies of all directors .",
+  },
+  {
+    title: "Photos of account signatories.",
   },
 ];
 
@@ -84,23 +96,21 @@ export default function CorporateBankingServicesInclude() {
   return (
     <>
       <NormalHeros
-        img="/personalAcnt.jpg"
+        img="/GIB_Bank_Pics/corporate_bank/corporate_bank.jpg"
         title="Corporate Banking Services Include"
         subtitle="
-        Unlock Financial Flexibility with Galaxy International Bank Insurance Premium Finance
-        At Galaxy International Bank, we understand that managing 
-        your business's finances is a balancing act. One aspect of financial
-        management that can present challenges is paying annual or semi-annual
-        insurance premiums in one lump sum. That's why we offer our corporate 
-        clients a seamless solution: Insurance Premium Finance.
+        This account will allow you to organize your finances while giving
+        you access to your money from anywhere through online banking and any
+        branch countrywide. That means you can focus on what matters
+        running your business smoothly.
         "
       />
       <Title label="Features & Benefits of" labelC="Corporate Banking Services Include" />
       <SectionList isBg items={features} isImgHidden />
+
       <Title label="Requirements" />
       <SectionList isBg isImgHidden items={requirements} />
-      {/* <Title label="Benefits" /> */}
-      {/* <Benefits items={benefits} /> */}
+
     </>
   );
 }

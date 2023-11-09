@@ -19,25 +19,33 @@ const requirements = [
   },
 ];
 
-const features = [
+const financingSolutions = [
   {
-    title: "Mobile banking for all your banking needs.",
+    title: "Home Electronics.",
   },
   {
-    title: "Easy way to deposit and withdraw.",
+    title: "Kitchen Appliances.",
   },
   {
-    title: "Standing orders for regular payments.",
+    title: "Living Room and Bedroom Furniture.",
+  },
+];
+const benefits = [
+  {
+    title: "Murabaha agreement.",
   },
   {
-    title: "No monthly fee charged.",
+    title: "Flexible terms.",
   },
   {
-    title: "Notifications for all transactions",
+    title: "Competitive pricing.",
+  },
+  {
+    title: "Relationship-based banking.",
   },
 ];
 
-const benefits = [
+const benefitshhhhh = [
   {
     Icon: BsQrCode,
     isPrimaryBg: true,
@@ -84,18 +92,20 @@ export default function FinancingFurniture() {
   return (
     <>
       <NormalHeros
-        img="/personalAcnt.jpg"
-        title="Financing Furniture"
+        img="/GIB_Bank_Pics/furniture_homeApl_fnc/furniture_homeApl_fnc2.jpg"
+        title="Financing Furniture and Home Appliance"
         subtitle={`
-        Transform Your Home with GIB’s Furniture and Home Appliances Financing. We understand that turning a house into a home often involves investing in quality furniture and essential appliances. Our financing solutions Include:
+        Transform Your Home with GIB’s Furniture and Home Appliances Financing.
+        We understand that turning a house into a home often involves investing
+        in quality furniture and essential appliances.
         `}
       />
-      <Title label="Features & Benefits of" labelC="Financing Furniture" />
-      <SectionList isBg items={features} isImgHidden />
-      <Title label="Requirements" />
-      <SectionList isBg isImgHidden items={requirements} />
-      {/* <Title label="Benefits" /> */}
-      {/* <Benefits items={benefits} /> */}
+      <Title label="Our financing solutions" labelC="include" />
+      <SectionList isBg items={financingSolutions} isImgHidden />
+      <Title label="Benefits" />
+      <SectionList isBg items={benefits} isImgHidden />
+
+      <div className="h-[7vh]" />
     </>
   );
 }

@@ -8,90 +8,59 @@ import { PiArrowsInCardinalBold } from "react-icons/pi";
 import { AiFillFileText, AiOutlineTransaction } from "react-icons/ai";
 import { MdOutlineSendToMobile } from "react-icons/md";
 
-const requirements = [
+const benefits = [
   {
-    title: "ID/passport",
-    checkIcon: true,
+    title: "Competitive fixed profit rate",
   },
   {
-    title: "Passport photo (taken at the branch)",
-    checkIcon: true,
+    title: "Flexible repayment options",
   },
+  {
+    title: "Reasonable Turnaround time",
+  },
+  {
+    title: "Transparent process",
+  },
+  {
+    title: "The asset forms part of the security",
+  },
+  {
+    title: "Dedicated relationship manager",
+  },
+  {
+    title: "No penalty on early repayment",
+  }
 ];
 
 const features = [
   {
-    title: "Mobile banking for all your banking needs.",
+    title: "Asset Based.",
   },
   {
-    title: "Easy way to deposit and withdraw.",
+    title: "Flexible terms.",
   },
   {
-    title: "Standing orders for regular payments.",
-  },
-  {
-    title: "No monthly fee charged.",
-  },
-  {
-    title: "Notifications for all transactions",
+    title: "New and Used Asset.",
   },
 ];
 
-const benefits = [
-  {
-    Icon: BsQrCode,
-    isPrimaryBg: true,
-    title: "SomQR Code",
-  },
-  {
-    Icon: BsCreditCard,
-    isPrimaryBg: false,
-    title: "Access To Debit Card",
-  },
-  {
-    Icon: PiArrowsInCardinalBold,
-    isPrimaryBg: true,
-    title: "Access To Financing",
-  },
-  {
-    Icon: BiTransfer,
-    isPrimaryBg: false,
-    title: "Free Account Transfers To GIB Accounts",
-  },
-  {
-    Icon: BsBank2,
-    isPrimaryBg: false,
-    title: "RTGS Transfers",
-  },
-  {
-    Icon: AiOutlineTransaction,
-    isPrimaryBg: true,
-    title: "SWIFT International Transfers",
-  },
-  {
-    Icon: AiFillFileText,
-    isPrimaryBg: false,
-    title: "Free Ordinary Statement",
-  },
-  {
-    Icon: MdOutlineSendToMobile,
-    isPrimaryBg: true,
-    title: "Access To Mobile and Internet Banking",
-  },
-];
 
 export default function AssetBasedFinancing() {
   return (
     <>
       <NormalHeros
-        img="/personalAcnt.jpg"
+        img="/GIB_Bank_Pics/asset_fnc/assets1.jpg"
         title="Asset Based Financing"
-        subtitle="Asset Finance can help you purchase essential equipment to drive your   business forward without tying up your cash."
+        subtitle="Asset Finance can help you purchase essential 
+        equipment to drive your   business forward without 
+        tying up your cash.
+        Using our asset-based financing solution, grow your business and achieve your financial goals. This financing allows you to borrow money using your assets as collateral. This can include inventory, machinery, equipment, or real estate.
+        "
       />
-      <Title label="Features & Benefits of" labelC="Asset Based Financing" />
+      <Title label="Features" />
       <SectionList isBg items={features} isImgHidden />
-      <Title label="Requirements" />
-      <SectionList isBg isImgHidden items={requirements} />
+      <Title label="Benefits" />
+      <SectionList isBg isImgHidden items={benefits} />
       {/* <Title label="Benefits" /> */}
       {/* <Benefits items={benefits} /> */}
     </>

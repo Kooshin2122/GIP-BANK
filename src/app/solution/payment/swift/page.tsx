@@ -19,72 +19,31 @@ const requirements = [
   },
 ];
 
-const features = [
+const benefits = [
   {
-    title: "Mobile banking for all your banking needs.",
+    title: "Pay your suppliers anywhere in the world.",
   },
   {
-    title: "Easy way to deposit and withdraw.",
+    title: "Receive incoming funds from partners and donors.",
   },
   {
-    title: "Standing orders for regular payments.",
+    title: "Pocket friendly cost.",
   },
   {
-    title: "No monthly fee charged.",
+    title: "Invest in foreign markets.",
   },
   {
-    title: "Notifications for all transactions",
+    title: "Purchase property abroad.",
   },
 ];
 
-const benefits = [
-  {
-    Icon: BsQrCode,
-    isPrimaryBg: true,
-    title: "SomQR Code",
-  },
-  {
-    Icon: BsCreditCard,
-    isPrimaryBg: false,
-    title: "Access To Debit Card",
-  },
-  {
-    Icon: PiArrowsInCardinalBold,
-    isPrimaryBg: true,
-    title: "Access To Financing",
-  },
-  {
-    Icon: BiTransfer,
-    isPrimaryBg: false,
-    title: "Free Account Transfers To GIB Accounts",
-  },
-  {
-    Icon: BsBank2,
-    isPrimaryBg: false,
-    title: "RTGS Transfers",
-  },
-  {
-    Icon: AiOutlineTransaction,
-    isPrimaryBg: true,
-    title: "SWIFT International Transfers",
-  },
-  {
-    Icon: AiFillFileText,
-    isPrimaryBg: false,
-    title: "Free Ordinary Statement",
-  },
-  {
-    Icon: MdOutlineSendToMobile,
-    isPrimaryBg: true,
-    title: "Access To Mobile and Internet Banking",
-  },
-];
+
 
 export default function Switf() {
   return (
     <>
       <NormalHeros
-        img="/personalAcnt.jpg"
+        img="/GIB_Bank_Pics/SWIFT/swift4.jpg"
         title="SWIFT"
         subtitle="
         Experience global connectivity and secure international 
@@ -95,12 +54,22 @@ export default function Switf() {
         your financial playground.
         "
       />
-      <Title label="Features & Benefits of" labelC="SWIFT" />
-      <SectionList isBg items={features} isImgHidden />
-      <Title label="Requirements" />
-      <SectionList isBg isImgHidden items={requirements} />
-      {/* <Title label="Benefits" /> */}
-      {/* <Benefits items={benefits} /> */}
+      <Title label="Benefits" />
+      <SectionList isBg items={benefits} isImgHidden />
+      <SectionList
+        isBg isImgHidden
+        textTitle="Note"
+        text="As per regulator requirement, transactions at or above 
+        the equivalent of US$ 10,000 require support documentation.
+        "
+      />
+      <SectionList
+        isBg isImgHidden
+        textTitle="Help"
+        text="If you have any questions about SWIFT transfers, please do not 
+        hesitate to contact us on (+252-614-987-777) or visit our branches.
+        "
+      />
     </>
   );
 }

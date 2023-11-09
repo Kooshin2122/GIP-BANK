@@ -29,51 +29,63 @@ export default function Footer() {
           <div className="max-1-md:block  flex justify-between text-white my-10 w-full ">
             <FooterLinksGroup title="QUICK LINKS">
               <FooterLinks label="About us" href="/about-us" />
-              <FooterLinks label="Ways to Bank" href="#" />
+              <FooterLinks label="Ways to Bank" href="/ways-to-bank" />
               <FooterLinks label="Contact Us" href="#" />
             </FooterLinksGroup>
 
             <FooterLinksGroup title="HELPFUL INFORMATION">
               <FooterLinks label="Tariff Guide" href="#" />
-              <FooterLinks label="Privacy Policy" href="#" />
-              <FooterLinks label="Internet Banking Security Tips" href="#" />
+              <FooterLinks label="Privacy Policy" href="/privacy-and-policy" />
+              <FooterLinks label="Internet Banking Security Tips" href="/internet-banking" />
               <FooterLinks label="FRC link" href="#" />
             </FooterLinksGroup>
 
             <FooterLinksGroup title="BANK WITH US">
-              <FooterLinks label="Banking for my Business" href="#" />
-              <FooterLinks label="Banking for Me" href="#" />
+              <FooterLinks label="Banking for my Business" href="/homeBageLinks/bankingForMyBusiness" />
+              <FooterLinks label="Banking for Me" href="/homeBageLinks/bankingForMe" />
               <FooterLinks
                 label="Banking for Gov’t and Institutions"
-                href="#"
+                href="/personal/govt-and-institution"
               />
 
-              <FooterLinks label="Banking for NGOs" href="#" />
+              <FooterLinks label="Banking for NGOs" href="/personal/ngos-page" />
               <FooterLinks
                 label="Banking for Educational Institutions"
-                href="#"
+                href="/personal/education-and-institutions"
               />
-              <FooterLinks label="Insurance for my Business" href="#" />
+              <FooterLinks label="Insurance for my Business" href="/solution/insurance/insuranceForMyBusiness" />
             </FooterLinksGroup>
 
             <FooterLinksGroup title="DISCLOSURES">
-              <FooterLinks label="Code of Conduct" href="#" />
-              <FooterLinks label="GIB Board Charters" href="#" />
+              <li className="my-2 text-base max-1-sm:text-sm">
+                <Link href={"/codeOfConduct1.pdf"} passHref className="hover:underline flex gap-2 ">
+                  Code of Conduct
+                </Link>
+              </li>
+              <li className="my-2 text-base max-1-sm:text-sm">
+                <Link href={"/BoardCharterGIB.pdf"} passHref className="hover:underline flex gap-2 ">
+                  GIB Board Charters
+                </Link>
+              </li>
             </FooterLinksGroup>
 
             <FooterLinksGroup title="BANKING HOURS">
-              <FooterLinks
-                label="Saturday - Thursday 8:30 am to 4.00pm"
-                href="#"
-              />
-              <FooterLinks label="Closed on Fridays" href="#" />
+              <li className="my-2 text-base max-1-sm:text-sm">
+                <p className="flex gap-2 ">
+                  Saturday - Thursday 8:30 am to 4.00pm
+              </p>
+              </li>
+              <li className="my-2 text-base max-1-sm:text-sm">
+                <p className="flex gap-2 ">
+                  Closed on Fridays
+                </p>
+              </li>
+              <li className="my-2 text-base max-1-sm:text-sm">
+                <p className="flex gap-2 ">
+                  Closed on Public holidays
+                </p>
+              </li>
 
-              <FooterLinks label="Closed on Public holidays" href="#" />
-
-              <FooterLinks
-                label="Down the bottom: Social Media handles"
-                href="#"
-              />
             </FooterLinksGroup>
           </div>
           <div className="text-center">

@@ -8,34 +8,43 @@ import { PiArrowsInCardinalBold } from "react-icons/pi";
 import { AiFillFileText, AiOutlineTransaction } from "react-icons/ai";
 import { MdOutlineSendToMobile } from "react-icons/md";
 
-const requirements = [
+const TypesOfInsurance = [
   {
-    title: "ID/passport",
-    checkIcon: true,
+    title: "Medical Insurance.",
   },
   {
-    title: "Passport photo (taken at the branch)",
-    checkIcon: true,
+    title: "Car Insurance.",
+  },
+  {
+    title: "Fire Insurance.",
+  },
+  {
+    title: "Money Insurance.",
+  },
+  {
+    title: "All Risk Insurance.",
   },
 ];
 
-const features = [
+const InsurancePremiumFinance = [
   {
-    title: "Mobile banking for all your banking needs.",
+    title: "Medical Insurance.",
   },
   {
-    title: "Easy way to deposit and withdraw.",
+    title: "Car Insurance.",
   },
   {
-    title: "Standing orders for regular payments.",
+    title: "Fire Insurance.",
   },
   {
-    title: "No monthly fee charged.",
+    title: "Money Insurance.",
   },
   {
-    title: "Notifications for all transactions",
+    title: "All Risk Insurance.",
   },
 ];
+
+
 
 const benefits = [
   {
@@ -84,7 +93,7 @@ export default function InsuranceForMyBusiness() {
   return (
     <>
       <NormalHeros
-        img="/personalAcnt.jpg"
+        img="/GIB_Bank_Pics/bussness_ins/bussness_ins.jpg"
         title="Insurance For My Business"
         subtitle="
         As your trusted banking partner, we are committed to providing
@@ -95,12 +104,9 @@ export default function InsuranceForMyBusiness() {
         Takaful Insurance.
         "
       />
-      <Title label="Features & Benefits of" labelC="Insurance For My Business" />
-      <SectionList isBg items={features} isImgHidden />
-      <Title label="Requirements" />
-      <SectionList isBg isImgHidden items={requirements} />
-      {/* <Title label="Benefits" /> */}
-      {/* <Benefits items={benefits} /> */}
+      <Title label="Types of Insurance " labelC="we provide" />
+      <SectionList isBg items={TypesOfInsurance} isImgHidden />
+      <div className="h-[10vh]" />
     </>
   );
 }
