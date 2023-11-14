@@ -20,15 +20,15 @@ export default function Home() {
       <CustomerSwiper className="h-[650px] max-md:h-[600px] max-sm:h-[400px] max-1-sm:h-[350px]">
         <MainSwiper
           showContent={true}
-          img="/hero1.jpeg"
+          img="/GIB_Bank_Pics/Home/Home1.jpg"
         />
         <MainSwiper
           showContent={true}
-          img="/hero2.jpeg"
+          img="/GIB_Bank_Pics/Home/Home2.jpg"
         />
         <MainSwiper
           showContent={true}
-          img="/hero3.jpeg"
+          img="/GIB_Bank_Pics/Home/Home3.jpg"
         />
       </CustomerSwiper>
       <SectionSwiper />
@@ -46,19 +46,15 @@ export default function Home() {
       </div> */}
       <CustomerSwiper direction="horizontal" className="my-10">
         <MainSwiper
-          img="/slide5.jpg"
+          img="/GIB_Bank_Pics/slides/slide1.jpg"
           showLinierGradient={false}
         />
         <MainSwiper
-          img="/slide2.png"
+          img="/GIB_Bank_Pics/slides/slide2.jpg"
           showLinierGradient={false}
         />
         <MainSwiper
-          img="/slide5.jpg"
-          showLinierGradient={false}
-        />
-        <MainSwiper
-          img="/slide4.png"
+          img="/GIB_Bank_Pics/slides/slide3.jpg"
           showLinierGradient={false}
         />
       </CustomerSwiper>

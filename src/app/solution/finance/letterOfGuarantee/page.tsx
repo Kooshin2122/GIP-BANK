@@ -172,7 +172,7 @@ export default function LetterOfGuarantee() {
   return (
     <>
       <NormalHeros
-        img="/GIB_Bank_Pics/letter_garuntee/letter_fnc3.jpg"
+        img="/GIB_Bank_Pics/letter_garuntee/LetterofGuarantee.jpg"
         title="Letter Of Guarantee"
         subtitle="
         At Galaxy International Bank, we understand that in business,

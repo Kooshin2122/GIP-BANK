@@ -97,7 +97,7 @@ export default function RealEstateFinance() {
   return (
     <>
       <NormalHeros
-        img="/GIB_Bank_Pics/real_estate_fnc/real_estate_fnc2.jpg"
+        img="/GIB_Bank_Pics/real_estate_fnc/real-estate.jpg"
         title="Real Estate Finance"
         subtitle="
         Whether you’re constructing, purchasing or renovating a property, we can help develop a solution that works for you. When it comes to real estate financing, you need a bank that knows the property sector and understands the local market.

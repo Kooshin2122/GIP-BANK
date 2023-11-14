@@ -93,7 +93,7 @@ export default function InsuranceForMyBusiness() {
   return (
     <>
       <NormalHeros
-        img="/GIB_Bank_Pics/bussness_ins/bussness_ins.jpg"
+        img="/GIB_Bank_Pics/bussness_ins/InsuranceBus.jpg"
         title="Insurance For My Business"
         subtitle="
         As your trusted banking partner, we are committed to providing

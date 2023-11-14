@@ -74,7 +74,7 @@ export default function EducationalAndInstitutionsAccountPage() {
   return (
     <>
       <NormalHeros
-        img="/edu1.jpg"
+        img="/GIB_Bank_Pics/eduBank/edu1.jpg"
         title="Banking For Educational & Institutions"
         subtitle="We understand the importance of the education sector to the growth of Somalia’s 
         economy. That’s why we offer solutions to help your public or private education 

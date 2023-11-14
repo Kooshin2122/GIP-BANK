@@ -66,6 +66,7 @@ export default function HomePageCards() {
           img="/swift-transfer-icon.png"
           labelLight="International"
           labelThick="Payments"
+          href="/solution/payment/swift"
         />
 
         <Card

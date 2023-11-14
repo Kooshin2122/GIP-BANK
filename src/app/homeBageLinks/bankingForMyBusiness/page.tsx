@@ -88,7 +88,7 @@ export default function BankingForMyBusiness() {
   return (
     <>
       <NormalHeros
-        img="/personal-hero-account.png"
+        img="/GIB_Bank_Pics/bankForBusiness/businessBank.jpg"
         title="Banking for my business"
         subtitle=""
       />

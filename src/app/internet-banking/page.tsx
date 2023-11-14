@@ -30,7 +30,7 @@ export default function InternetBanking() {
     return (
         <>
             <NormalHeros
-                img="/personal-hero-account.png"
+                img="/GIB_Bank_Pics/internetSec/internetsec.jpg"
                 title="Online Banking Safety Tips"
                 subtitle="Online banking is a convenient way to manage your finances, but it's important to prioritize safety and security. While GIB Bank has implemented several  security measures, you can take some steps on your own to keep your financial and personal details out of the hands of hackers."
             />

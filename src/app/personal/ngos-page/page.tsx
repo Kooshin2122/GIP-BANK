@@ -94,7 +94,7 @@ export default function NGOSPage() {
   return (
     <>
       <NormalHeros
-        img="/ngos.jpg"
+        img="/GIB_Bank_Pics/ngo/NGO.jpg"
         title="Banking For NGOs"
         subtitle="This is an account that is specially tailored to the needs of charitable and donation-
         oriented organisations both National and International NGOs."

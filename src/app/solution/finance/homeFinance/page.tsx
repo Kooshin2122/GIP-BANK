@@ -45,7 +45,7 @@ export default function HomeFinance() {
   return (
     <>
       <NormalHeros
-        img="/GIB_Bank_Pics/home_fnc/home_finance2.jpg"
+        img="/GIB_Bank_Pics/home_fnc/HomeFin.jpeg"
         title="Home Finance"
         subtitle="
         Galaxy International Bank’s Home Finance program enables you 

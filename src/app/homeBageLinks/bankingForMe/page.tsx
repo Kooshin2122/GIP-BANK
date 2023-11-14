@@ -71,7 +71,7 @@ export default function BankingForMePage() {
   return (
     <>
       <NormalHeros
-        img="/personal-hero-account.png"
+        img="/GIB_Bank_Pics/bankingMe/bankingforme.jpg"
         title="Banking for me"
         subtitle=""
       />

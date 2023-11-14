@@ -15,7 +15,7 @@ export default function NormalHeros({
         priority
         src={img ?? "/business-bank.png"}
         alt="Picture of the author"
-        className="h-[364]"
+        className="h-[100] sm:h-[364]"
         fill
       />
       <div className="absolute w-full h-full linear-gradient-bg max-1-md:px-4">

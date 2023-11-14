@@ -7,7 +7,7 @@ export default function AboutUsPage() {
   return (
     <>
       <NormalHeros
-        img="/aboutUsBg.jpg"
+        img="/GIB_Bank_Pics/waystoBank/waystoBank.jpg"
         title="About Us"
         subtitle="Galaxy International Bank (GIB)"
       />

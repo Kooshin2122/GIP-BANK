@@ -49,7 +49,7 @@ export default function AssetBasedFinancing() {
   return (
     <>
       <NormalHeros
-        img="/GIB_Bank_Pics/asset_fnc/assets1.jpg"
+        img="/GIB_Bank_Pics/asset_fnc/asset6.jpg"
         title="Asset Based Financing"
         subtitle="Asset Finance can help you purchase essential 
         equipment to drive your   business forward without 

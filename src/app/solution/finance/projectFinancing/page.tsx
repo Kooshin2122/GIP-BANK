@@ -84,7 +84,7 @@ export default function ProjectFinancing() {
   return (
     <>
       <NormalHeros
-        img="/GIB_Bank_Pics/project_fnc/project_fnc2.jpg"
+        img="/GIB_Bank_Pics/project_fnc/Projectfinancing2.jpg"
         title="Project Financing"
         subtitle="At Galaxy International Bank, we recognize that ambitious goals require substantial resources. As your partner, we offer tailored financing solutions and access to the necessary capital, regardless of your project's size or complexity."
       />

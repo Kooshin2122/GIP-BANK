@@ -108,7 +108,7 @@ export default function WaysToBankPage() {
     return (
         <>
             <NormalHeros
-                img="/personal-hero-account.png"
+                img="/GIB_Bank_Pics/waystoBank/waystoBank.jpg"
                 title="Ways to Bank"
             />
             <Title label="Ways to Bank" />

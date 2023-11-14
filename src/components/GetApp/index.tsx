@@ -54,7 +54,8 @@ const GetApp = () => {
                     </div>
                 </div>
                 <div className="flex flex-1 items-center justify-end">
-                    <Image src="/phones.png" alt="phones" width={550} height={870} />
+                    <Image src="/GIB_Bank_Pics/mobile/mobile1.png" alt="phones" width={300} height={300} />
+                    {/* <Image src="/GIB_Bank_Pics/mobile/online.png" alt="phones" width={500} height={500} /> */}
                 </div>
             </div>
         </section>

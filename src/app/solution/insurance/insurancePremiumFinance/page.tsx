@@ -84,7 +84,7 @@ export default function InsurancePremiumFinance() {
   return (
     <>
       <NormalHeros
-        img="/GIB_Bank_Pics/premium_ins/premium_ins.jpg"
+        img="/GIB_Bank_Pics/premium_ins/premium1.jpg"
         title="Insurance Premium Finance"
         subtitle="
         Unlock financial flexibility with Galaxy International Bank 

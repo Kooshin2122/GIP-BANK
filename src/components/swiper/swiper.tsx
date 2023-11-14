@@ -23,7 +23,7 @@ export function CustomerSwiper({
     <div>
       <Swiper
         direction={direction ?? "vertical"}
-        className={"h-[500px] " + className}
+        className={"h-[150px] sm:h-[500px] " + className}
         loop
         autoplay={{
           delay: 5000,

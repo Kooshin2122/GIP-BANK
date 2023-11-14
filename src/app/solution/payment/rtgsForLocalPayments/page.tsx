@@ -46,7 +46,7 @@ export default function RtgsForLocalPayments() {
   return (
     <>
       <NormalHeros
-        img="/GIB_Bank_Pics/rtgs/rtgs.jpg"
+        img="/GIB_Bank_Pics/rtgs/RTGS1.jpg"
         title="RTGS (Real-Time Gross Settlement)"
         subtitle="
         Streamline your local financial transactions with the 
